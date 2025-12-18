@@ -1,5 +1,9 @@
-# Mac finder metadata
-.DS_Store*
-*.DS_Store
-
 .env
+*.wasm
+main
+sample*
+
+!*.c
+!*.rs
+!*.go
+!*.wat
