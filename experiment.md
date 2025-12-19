@@ -1,49 +1,50 @@
-# 検証
+検証
+====
 
-- WAT to WASM
+-	WAT to WASM
 
-    ```bash
-    wat2wasm ./sample01.wat -o ./sample01.wasm
-    ```
+	```bash
+	wat2wasm ./sample01.wat -o ./sample01.wasm
+	```
 
-- Clang
+-	Clang
 
-    ```bash
-    clang --target=wasm32 -O3 -nostdlib -Wl,--no-entry -Wl,--export-all -fno-delete-null-pointer-checks -o sample02.wasm sample02.c
-    ```
+	```bash
+	clang --target=wasm32 -O3 -nostdlib -Wl,--no-entry -Wl,--export-all -fno-delete-null-pointer-checks -o sample02.wasm sample02.c
+	```
 
-- WASM to WAT
+-	WASM to WAT
 
-    ```bash
-    wasm2wat sample02.wasm -o sample02.wat 
-    ```
+	```bash
+	wasm2wat sample02.wasm -o sample02.wat 
+	```
 
-- Rust
+-	Rust
 
-    ```bash
-    rustc --target wasm32-unknown-unknown -O --crate-type cdylib -o sample03.wasm sample03.rs
-    ```
+	```bash
+	rustc --target wasm32-unknown-unknown -O --crate-type cdylib -o sample03.wasm sample03.rs
+	```
 
-- WASM to WAT
+-	WASM to WAT
 
-    ```bash
-    wasm2wat sample03.wasm -o sample03.wat 
-    ```
+	```bash
+	wasm2wat sample03.wasm -o sample03.wat 
+	```
 
-- wasmtime
+-	wasmtime
 
-    ```bash
-    wasmtime run sampleXX.wasm
-    ```
+	```bash
+	wasmtime run sampleXX.wasm
+	```
 
-- make cwasm
+-	make cwasm
 
-    ```bash
-    wasmtime compile ./sampleXX.wasm
-    ```
+	```bash
+	wasmtime compile ./sampleXX.wasm
+	```
 
-- Object dumping
+-	Object dumping
 
-    ```bash
-    wasmtime objdump ./sampleXX.cwasm --addresses --bytes --addrmap
-    ```
+	```bash
+	wasmtime objdump ./sampleXX.cwasm --addresses --bytes --addrmap
+	```
