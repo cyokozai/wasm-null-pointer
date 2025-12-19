@@ -4,7 +4,7 @@
 
     ```bash
     wat2wasm ./sample01.wat -o ./sample01.wasm
-
+    ```
 
 - Clang
 
@@ -34,5 +34,16 @@
 
     ```bash
     wasmtime run sampleXX.wasm
-    echo $?
+    ```
+
+- make cwasm
+
+    ```bash
+    wasmtime compile ./sampleXX.wasm
+    ```
+
+- Object dumping
+
+    ```bash
+    wasmtime objdump ./sampleXX.cwasm --addresses --bytes --addrmap
     ```
