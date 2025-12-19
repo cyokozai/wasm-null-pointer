@@ -1,5 +1,4 @@
-検証
-====
+# 検証
 
 ### WebAssembly Text Format
 
