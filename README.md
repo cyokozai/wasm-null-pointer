@@ -44,14 +44,15 @@
     # Select 1, ENTER
     source $HOME/.cargo/env
     rustc --version
+    rustup target add wasm32-unknown-unknown
     ```
 
 - Go
 
     ```bash
-    wget https://go.dev/dl/go1.25.4.linux-amd64.tar.gz
-    sudo tar -C /usr/local -xzf go1.25.4.linux-amd64.tar.gz
-    rm go1.25.4.linux-amd64.tar.gz
+    wget https://go.dev/dl/go1.25.4.linux-arm64.tar.gz
+    sudo tar -C /usr/local -xzf go1.25.4.linux-arm64.tar.gz
+    rm go1.25.4.linux-arm64.tar.gz
     echo 'export PATH=/usr/local/go/bin:$PATH' >> ~/.bashrc
     source ~/.bashrc
     go version
