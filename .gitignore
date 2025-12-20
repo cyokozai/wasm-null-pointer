@@ -1,6 +1,7 @@
 .env
 *.cwasm
 *.wasm
+*.dat
 main
 sample*
 

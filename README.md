@@ -20,9 +20,9 @@
 
     | 言語 | コンパイラ / 実装  | バージョン | ターゲット |
     | --- | ---------------- | -------- | -------- |
-    | C / C++ | clang        | 18.1.3 | aarch64-unknown-linux-gnu |
-    | Rust    | rustc        | 1.92.0 | wasm32-unknown-unknown    |
-    | Go      | TinyGo | 1.25.4 / 0.40.1 | linux/amd64 |
+    | C / C++ | clang | 18.1.3 | aarch64-unknown-linux-gnu |
+    | Rust | rustc | 1.92.0 | wasm32-unknown-unknown |
+    | Go | TinyGo | 1.25.4 / 0.40.1 | linux/arm64 |
 
 ※ DevContainer を使用する場合は以下の作業は不要
 
